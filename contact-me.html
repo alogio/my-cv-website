@@ -7,8 +7,95 @@
 </head>
 
 <body>
-    <p> tel: 07xxxxxxxxx </p>
-    <p> email: not-my-real-email@icloud.com </p>
+    <p> tel: <a href="tel:07xxxxxxxxx"> 07xxxxxxxxx </a> </p>
+    <p> email: <a href="mailto:not-my-real-email@icloud.com"> not-my-real-email@icloud.com </a> </p>
+    <hr>
+
+    <h2> Contact me form </h2>
+    <form action="https://httpbin.org/anything" method="post">
+        <fieldset>
+            <legend> Personal information </legend>
+
+            <label for="name"> Name: </label>
+            <input type="text" id="name" name="FullName" placeholder="Enter your full name">
+            <br>
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+            <br>
+            <label for="phone"> Phone: </label>
+            <input type="tel" id="phone" name="Phone" placeholder="Enter your phone">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend> Choose appointment time: </legend>
+            <label for="mon"> Monday </label>
+            <input type="radio" name="Day" value="Monday" id="mon">
+            <label for="mon"> Tuesday</label>
+            <input type="radio" name="Day" value="Tuesday" id="tue">
+            <label for="wed"> Wednesday </label>
+            <input type="radio" name="Day" value="Wednesday" id="wed">
+            <label for="mon"> Thursday </label>
+            <input type="radio" name="Day" value="Thursday" id="thu">
+            <label for="mon"> Friday </label>
+            <input type="radio" name="Day" value="Friday" id="fri">
+            <br>
+            <label for="from-time"> From: </label>
+            <input type="time" name="FromTime" id="from-time">
+
+            <label for="to-time"> To: </label>
+            <input type="time" name="ToTime" id="to-time">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>
+                <label for="subject"> Subject: </label>
+                <select id="subject" name="Subject" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="Casual"> Casual question </option>
+                    <option value="IT"> IT-related question</option>
+                    <option value="LifeAdvice"> Life advice </option>
+                    <option value="Other"> Other </option>
+                </select>
+            </legend>
+            <br>
+
+            <label for="message"> Your message: </label>
+            <br>
+            <textarea id="message" name="Message" cols="40" rows="10"
+                placeholder="Enter your message in here!"></textarea>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend> Contact preferences </legend>
+            
+            <label for="phone-pref"> Phone </label>
+            <input type="checkbox" name="PhonePref" value="True" id="phone-pref">
+
+            <label for="email-pref"> Email </label>
+            <input type="checkbox" name="EmailPref" value="True" id="email-pref">
+            
+            <label for="ms-teams-pref"> MS Teams </label>
+            <input type="checkbox" name="MSTeamsPref" value="True" id="ms-teams-pref">
+
+            <p>
+                <input type="checkbox" name="Agreed" required>
+                I would like to be contacted using information provided on
+                this form!
+            </p>
+        </fieldset>
+
+        <input type="submit" id="submit-button" value="Submit form!">
+    </form>
+    <hr>
+
+    <footer>
+        <a href="index.html"> Home </a> &emsp;
+        <a href="projects.html"> Projects </a> &emsp;
+        <a href="contact-me.html"> ☎︎Contact me </a>
+    </footer>
 </body>
 
 </html>
