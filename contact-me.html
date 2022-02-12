@@ -16,15 +16,20 @@
     <form action="https://httpbin.org/anything" method="post">
         <fieldset>
             <legend> Personal information </legend>
-
-            <label for="name"> Name: </label>
-            <input type="text" id="name" name="FullName" placeholder="Enter your full name">
-            <br>
-            <label for="email"> Email: </label>
-            <input type="email" id="email" name="Email" placeholder="Enter your email" required>
-            <br>
-            <label for="phone"> Phone: </label>
-            <input type="tel" id="phone" name="Phone" placeholder="Enter your phone">
+            <table>
+                <tr> 
+                    <td> <label for="name"> Name: </label> </td>
+                    <td> <input type="text" id="name" name="FullName" placeholder="Enter your full name"> </td>
+                </tr>
+                <tr>
+                    <td> <label for="email"> Email: </label> </td>
+                    <td> <input type="email" id="email" name="Email" placeholder="Enter your email" required> </td>
+                </tr>
+                <tr> 
+                    <td> <label for="phone"> Phone: </label> </td>
+                    <td> <input type="tel" id="phone" name="Phone" placeholder="Enter your phone"> </td>
+                </tr>
+            </table>
         </fieldset>
         <br>
 
@@ -87,6 +92,7 @@
                 this form!
             </p>
         </fieldset>
+        <br>
 
         <input type="submit" id="submit-button" value="Submit form!">
     </form>
@@ -95,7 +101,7 @@
     <footer>
         <a href="index.html"> Home </a> &emsp;
         <a href="projects.html"> Projects </a> &emsp;
-        <a href="https://alogio.github.io/my-pizza-shop/"> My Pizza Shop </a> &emsp;
+        <a href="https://alogio.github.io/my-pizza-shop/"> Luiggi's Pizza Shop </a> &emsp;
         <a href="contact-me.html"> ☎︎Contact me </a>
     </footer>
 </body>

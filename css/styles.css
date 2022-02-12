@@ -1,7 +1,17 @@
 body {
-    background-color: aqua;
+    background-color: #e4f5f9;
 }
 
-h3, h4, h5 {
-    background-color: aliceblue;
+h1, h2, h3 {
+    color: #66bfbf;
+}
+
+hr {
+    border-style: dotted none none none; 
+    border-width: 16px;
+    border-color: white;
+}
+
+.star {
+    color: gold;
 }
